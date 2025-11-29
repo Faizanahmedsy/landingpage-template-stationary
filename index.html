@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo Puthawala Stores</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Puthawala Stores</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            lumina: {
+              bg: '#F8FAFC', // Very light slate/blue white
+              dark: '#0B1120', // Deep navy
+              primary: '#FF004D', // Vibrant pink/red from screenshot
+              accent: '#3B82F6', // Blue accent
+              soft: '#F1F5F9', // Soft gray for cards
+              card: '#FFFFFF',
+            }
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'scan': 'scan 3s linear infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
             },
-            colors: {
-              lumina: {
-                bg: '#F8FAFC', // Very light slate/blue white
-                dark: '#0B1120', // Deep navy
-                primary: '#FF004D', // Vibrant pink/red from screenshot
-                accent: '#3B82F6', // Blue accent
-                soft: '#F1F5F9', // Soft gray for cards
-                card: '#FFFFFF',
-              }
-            },
-            animation: {
-              'float': 'float 6s ease-in-out infinite',
-              'scan': 'scan 3s linear infinite',
-            },
-            keyframes: {
-              float: {
-                '0%, 100%': { transform: 'translateY(0)' },
-                '50%': { transform: 'translateY(-10px)' },
-              },
-              scan: {
-                '0%': { top: '0%' },
-                '100%': { top: '100%' },
-              }
+            scan: {
+              '0%': { top: '0%' },
+              '100%': { top: '100%' },
             }
           }
         }
       }
-    </script>
-    <style>
-      body {
-        background-color: #F8FAFC;
-        color: #0B1120;
-      }
-      /* Custom scrollbar to match the clean aesthetic */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #cbd5e1;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #94a3b8;
-      }
-    </style>
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F8FAFC;
+      color: #0B1120;
+    }
+
+    /* Custom scrollbar to match the clean aesthetic */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -72,7 +78,12 @@
 }
 </script>
 </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Load the app entry so Vite serves/transforms index.tsx -->
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>

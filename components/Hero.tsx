@@ -23,7 +23,7 @@ export const Hero: React.FC = () => {
           </h1>
           
           <p className="text-lg text-slate-600 leading-relaxed max-w-lg">
-            From mobile recharges and urgent xerox copies to thoughtful gifts and expert watch repair. Puthawala Stores is your friendly neighborhood one-stop shop.
+            From mobile recharges and urgent xerox copies to thoughtful gifts and expert watch repair. Demo Puthawala Stores is your friendly neighborhood one-stop shop.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
@@ -52,7 +52,7 @@ export const Hero: React.FC = () => {
           <div className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl p-8 border border-slate-100 transform rotate-[-3deg] hover:rotate-0 transition-transform duration-500">
             {/* Header */}
             <div className="border-b-2 border-dashed border-slate-100 pb-6 mb-6">
-              <h3 className="text-2xl font-black text-slate-800 uppercase tracking-widest text-center">Puthawala Stores</h3>
+              <h3 className="text-2xl font-black text-slate-800 uppercase tracking-widest text-center">Demo Puthawala Stores</h3>
               <p className="text-center text-xs font-bold text-slate-400 mt-1 tracking-widest uppercase">Official Service Receipt</p>
             </div>
 

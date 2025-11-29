@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, ShoppingBag, Phone } from 'lucide-react';
+import { Menu, X, ShoppingBag, Users } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,16 +17,13 @@ export const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-sm font-medium text-slate-600 hover:text-lumina-dark transition-colors">Services</a>
-            <a href="#store" className="text-sm font-medium text-slate-600 hover:text-lumina-dark transition-colors">Stationary & Gifts</a>
-            <a href="#contact" className="text-sm font-medium text-slate-600 hover:text-lumina-dark transition-colors">Contact</a>
-            
+          <div className="hidden md:flex items-center">
             <a 
               href="https://wa.me/1234567890" 
-              className="bg-lumina-dark text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 transition-all flex items-center gap-2"
+              className="bg-[#25D366] text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-[#20bd5a] transition-all flex items-center gap-2 shadow-lg shadow-green-500/20 hover:shadow-green-500/40 hover:-translate-y-0.5"
             >
-              WhatsApp Us <Phone size={14} />
+              <Users size={18} strokeWidth={2.5} />
+              Join our WhatsApp Community
             </a>
           </div>
 
@@ -45,12 +42,13 @@ export const Navbar: React.FC = () => {
       {/* Mobile Nav */}
       {isOpen && (
         <div className="md:hidden bg-white border-t border-slate-100 absolute w-full shadow-lg">
-          <div className="px-4 pt-2 pb-6 space-y-2">
-            <a href="#services" className="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Services</a>
-            <a href="#store" className="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Items</a>
-            <a href="#contact" className="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Contact</a>
-            <a href="https://wa.me/1234567890" className="block px-3 py-3 rounded-md text-base font-medium text-lumina-primary font-bold">
-              Chat on WhatsApp
+          <div className="p-4">
+            <a 
+              href="https://wa.me/1234567890" 
+              className="flex items-center justify-center gap-2 w-full bg-[#25D366] text-white px-4 py-4 rounded-xl text-base font-bold shadow-md active:scale-95 transition-transform"
+            >
+              <Users size={20} strokeWidth={2.5} />
+              Join our WhatsApp Community
             </a>
           </div>
         </div>

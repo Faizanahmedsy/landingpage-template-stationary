@@ -17,7 +17,7 @@ export const InfoSection: React.FC = () => {
             <InfoItem 
               icon={<MapPin size={24} />} 
               label="Location" 
-              value="Shop No. 12, Lumina Market Complex, Main Road, City Center"
+              value="Shop No. 12, Market Complex, Main Road, City Center"
             />
             <InfoItem 
               icon={<Clock size={24} />} 
@@ -51,7 +51,7 @@ export const InfoSection: React.FC = () => {
              <div className="w-12 h-12 bg-lumina-primary text-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg shadow-rose-500/30">
                <MapPin size={24} fill="currentColor" />
              </div>
-             <p className="font-bold text-slate-800">Lumina General Store</p>
+             <p className="font-bold text-slate-800">Puthawala Stores</p>
              <p className="text-xs text-slate-500 font-bold mt-1 uppercase tracking-wide">Here for you</p>
           </div>
         </div>

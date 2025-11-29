@@ -13,7 +13,7 @@ export const Navbar: React.FC = () => {
             <div className="w-10 h-10 bg-lumina-dark rounded-xl flex items-center justify-center text-white">
               <ShoppingBag size={20} strokeWidth={2.5} />
             </div>
-            <span className="text-xl font-bold tracking-tight text-lumina-dark">Lumina Store</span>
+            <span className="text-xl font-bold tracking-tight text-lumina-dark">Puthawala Stores</span>
           </div>
 
           {/* Desktop Nav */}
